@@ -1,6 +1,7 @@
 from flask import Flask, render_template, abort
 import pandas as pd
 import json
+import os
 
 app = Flask(__name__)
 df = pd.read_csv("product_data.csv")
