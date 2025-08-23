@@ -60,7 +60,7 @@ def generate_batches(per_product=3):
 def main():
     df = generate_batches(per_product=3)
     df.to_csv("product_data.csv", index=False)
-    public_url = "https://qr-product-trace.onrender.com" 
+    public_url = "https://qr-product-trace-luji.onrender.com" 
 
     for _, row in df.iterrows():
         qr_url = f"{public_url}/product/{row['batch_id']}"
